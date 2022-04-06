@@ -1,6 +1,15 @@
 # MakeMyAttendence
 MakeMyAttendence App help the teachers to make the attendence form and take the attendence easily by just sharing the link.
 
+## Tech Stack Used
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=&logoColor)&nbsp;
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=&logoColor=white)&nbsp;
+![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=&logoColor=white)&nbsp;
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=&logoColor=white)&nbsp;
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)&nbsp;
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)&nbsp;
+![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)&nbsp;
+
 ## MakeMyAttendence LOGO
 <p align="center">
   <img width="200" src="https://user-images.githubusercontent.com/56023805/162070973-e73ffd40-83df-4dd1-8ee8-cd3726f2c408.png" alt="Material Bread logo">
@@ -24,4 +33,20 @@ MakeMyAttendence App help the teachers to make the attendence form and take the 
 
 ## Student Attendence Record List
 ![Capture6](https://user-images.githubusercontent.com/56023805/162069409-7f3653a1-e1b1-41bf-b504-ec94c7722581.PNG)
+
+## Run Locally 💻
+
+```
+> Clone the repo
+    >> For Windows: Git Bash
+    >> For Linux: Terminal
+    >> git clone https://github.com/hritikkhurana10sm/MakeMyAttendence.git
+    >> cd MakeMyAttendence
+> Install all dependencies
+    >> npm i
+> Spin the server on port 3000
+    >> npm start
+> Visit the website on http://localhost:3000/
+    
+```
 
