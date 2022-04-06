@@ -1,5 +1,11 @@
 # MakeMyAttendence
-MakeMyAttendence App helps the teachers to make the attendence form and take the attendence easily by just sharing the link.
+MakeMyAttendence App help the teachers to make the attendence form and take the attendence easily by just sharing the link.
+
+## MakeMyAttendence LOGO
+<p align="center">
+  <img width="200" src="https://user-images.githubusercontent.com/56023805/162070973-e73ffd40-83df-4dd1-8ee8-cd3726f2c408.png" alt="Material Bread logo">
+</p>
+
 
 ## Click on <b>Create Link</b>
 ![Capture1](https://user-images.githubusercontent.com/56023805/162069414-eb80360e-605e-442f-9c3d-4b1a8475ea70.PNG)
