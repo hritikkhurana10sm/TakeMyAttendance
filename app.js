@@ -208,7 +208,10 @@ app.get('/', async (req, res) => {
 	return res.redirect('./signup.html');
 })
 
+app.get('/signup' , async (req, res) => {
 
+	return res.redirect('./signup.html');
+})
 app.post('/signup', async (req, res) => {
 
 	const url = 'mongodb://localhost/play'
