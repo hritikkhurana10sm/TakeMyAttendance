@@ -205,7 +205,7 @@ app.get('/getinfo/:db', async (req, res) => {
 // signin
 app.get('/', async (req, res) => {
 
-	return res.render('signup.ejs');
+	return res.redirect('./signup.ejs');
 })
 
 
