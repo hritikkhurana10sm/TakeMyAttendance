@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TakeMyAttendance</title>
+</head>
+<body style="display: flex;justify-content: center;align-items: center; flex-direction: column;background-color: #181a1b;color: #e8e6e3;">
+  <style>
+    h2{
+      padding-top: 4%;
+      text-align: center;
+    }
+    table, th, td {
+  border:1px solid white;
+  font-size: 20px;
+}
+table{
+  text-align: center;
+background-color:#fff3f3;
+  width:40%;
+  background-color: #7a0000;
+  color: white;
+  
+}
+th{
+ 
+  font-weight: bolder;
+}
+
+th , td{
+   height: 30%;
+   padding:10px
+}
+  </style>
+    <table id = "list" cellspacing="10" cell-padding="15"  style="box-shadow: 9px 10px 12px 1px rgb(28 28 28)">
+        <tr><h2 >Students Attendence Record</h2></tr> 
+        
+         <% result.forEach(function(results){%>
+           <tr>
+              <th style=" font-size: 23px;">Name : <%= results.name %></th>
+              <th style=" font-size: 23px;">PRN : <%= results.prn %></th>
+           </tr>
+         <% }) %>
+      
+       </table>
+</body>
+</html>

@@ -1,23 +1,34 @@
 {
   "name": "takemyattendance",
   "version": "1.0.0",
-  "description": "",
+  "description": "MakeMyAttendence App help the teachers to make the attendence form and take the attendence easily by just sharing the link.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Hritik Khurana",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.6",
     "crypto-random-string": "^3.3.1",
+    "ejs": "^3.1.8",
     "express": "^4.17.1",
+    "express-session": "^1.17.3",
     "json2csv": "^5.0.6",
     "mongoose": "^5.12.10"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hritikkhurana10sm/TakeMyAttendance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hritikkhurana10sm/TakeMyAttendance/issues"
+  },
+  "homepage": "https://github.com/hritikkhurana10sm/TakeMyAttendance#readme"
 }

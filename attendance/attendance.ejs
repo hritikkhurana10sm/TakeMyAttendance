@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
         integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <style>
+        body{
+            background-color: #181a1b;
+            color :hsl(0, 0%, 99%)
+        }
         .formstyle {
             padding-top: 5%;
             padding-left: 25%;
@@ -31,7 +35,7 @@
         }
 
         button {
-            background-color: #4286f4;
+            background-color: #3391ff;
             color: white;
             padding: 14px 0;
             margin: 10px 0;
@@ -68,12 +72,12 @@
     </style>
 
 <body>
-    <h3 id="title">Title : </h3>
-    <h3 id="creater">Created by : </h3>
+    <h3 id = "<%= result.title %>">Title : <%= result.title %></h3>
+    <h3 >Created by : <%= result.name %> </h3>
     
     <div class="formstyle">
 
-        <form method="POST" enctype="application/x-www-form-urlencoded">
+        <form method="POST"  enctype="application/x-www-form-urlencoded">
             <h1>Fill Your Attendance</h1>
             <div class="formcontainer">
                 <div class="container">
@@ -87,7 +91,7 @@
 
     </div>
     <br>
-    <button id = "show" type="submit">Show Reponses</button>
+    <!-- <button id = "show" type="submit">Show Reponses</button> -->
 
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

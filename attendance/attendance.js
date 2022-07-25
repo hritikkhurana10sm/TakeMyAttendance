@@ -6,7 +6,7 @@ const urlParams = new URLSearchParams(window.location.search)
 const db = urlParams.get('db')
 
 show.onclick  = async(event) => {
-    var fullUrl = window.location.origin + `/getlist?db=${db}`; 
+    var fullUrl = window.location.origin + `/getlist/${db}`; 
     console.log("fullUrl - ", fullUrl);
     console.log("window.location.origin - " , window.location.origin);
     window.location.assign(fullUrl)

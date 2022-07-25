@@ -14,27 +14,17 @@ const studentSchema = new mongoose.Schema({
 		minlength:10,
 		unique:true
 		
-	}
-})
-
-
-const links = new mongoose.Schema({
-	name:{
-		type:String,
-		required:true,
-	},
-	title:{
-		type:String,
-		required:true
 	},
 	hash:{
 		type:String,
 		required:true
+	},
+	date : {
+		type : String
 	}
-	
 })
 
 
-module.exports = { studentSchema,links }
+module.exports = mongoose.model("Student" , studentSchema);
 
 

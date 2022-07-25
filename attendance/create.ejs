@@ -2,7 +2,7 @@
 
 
 <title>
-    Welcome to TakeMyattendance
+    Welcome to TakeMyAttendance
 </title>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
@@ -15,6 +15,11 @@
         justify-content: center;
         font-family: Roboto, Arial, sans-serif;
         font-size: 15px;
+        background-color: #181a1b;
+        color : #e8e6e3;
+    }
+    a{
+        color : #3391ff
     }
 
     form {
@@ -32,7 +37,7 @@
     }
 
     button {
-        background-color: #4286f4;
+        background-color: #1ce23d;
         color: white;
         padding: 14px 0;
         margin: 10px 0;
@@ -62,18 +67,23 @@
 
 <body>
 <!-- changed a bit -->
-    <form method="POST"  enctype="application/x-www-form-urlencoded">
+
+    <form method="POST"  action = "/create" enctype="application/x-www-form-urlencoded">
         <h1>Create attendance Link</h1>
+
         <div class="formcontainer">
             <div class="container">
                 <label for="name"><strong>Your Name</strong></label>
-                <input id="name" type="text" placeholder="Enter Name" name="name" required>
+                <input id="name" type="text" placeholder="Enter Name" name="name" required value = "<%= user.name %>">
                 <label for="title"><strong>Title</strong></label>
                 <input id="title" type="text" placeholder="Enter Title" name="title" required>
             </div>
-            <button type="submit" id="create"><strong>CREATE</strong></button>
-    </form>
 
+            <button type="submit" id="create"><strong>CREATE</strong></button>
+
+    </form>
+ 
+     <div style="text-align: center; margin-top: 15px;"><a  style = "color: #ccc;text-decoration: none;text-decoration: underline;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-weight: 700;" href="/list">SHOW PREVIOUS ATTENDENCE RESPONSES</a></div>
 
 
     <script src="./create.js"></script>
