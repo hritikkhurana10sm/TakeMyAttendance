@@ -205,7 +205,7 @@ app.get('/getinfo/:db', async (req, res) => {
 // signin
 app.get('/', async (req, res) => {
 
-	return res.redirect('./signup.ejs');
+	return res.redirect('./signup.html');
 })
 
 
@@ -235,7 +235,7 @@ app.post('/signup', async (req, res) => {
 
 	res.cookie('user', link._id);
 	
-	res.render('create.ejs');
+	res.redirect('./signup.html');
 
 })
 
@@ -256,6 +256,7 @@ app.post('/signin', async (req, res) => {
 	var user = await Links.find({
 		name: data.username
 	});
+	
 	if (user) {
 
 		if (user[0].password !== data.password) {
