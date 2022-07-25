@@ -235,7 +235,7 @@ app.post('/signup', async (req, res) => {
 
 	res.cookie('user', link._id);
 	
-	res.redirect('/signup');
+	res.redirect('/');
 
 })
 
